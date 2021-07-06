@@ -1,0 +1,62 @@
+
+/*MAIN PAGE*/
+
+h1 {
+    background-color: #f58ea0;
+    color: rgb(128, 128, 128);
+}
+
+/*We have 3 h2 */
+
+
+#mainpage h2 {
+    background-color: #dad8d8;
+    color: purple;
+}
+
+#main-topic {
+    background-color: #FF69B4;
+}
+
+.subtopic {
+
+    background-color: #ebf64d;
+
+}
+.subtopic:hover {
+    color: lightblue;
+}
+
+.partner {
+    background-color: turquoise;
+}
+.partner:hover {
+    background-color: yellowgreen;
+}
+
+#contact-link:link {
+    color: red;
+}
+#contact-link:visited {
+    color: blue ;
+}
+#contact-link:hover {
+    color: seagreen;
+}
+
+
+/*   END MAIN PAGE   */
+
+/*   CONTACT PAGE   */
+
+#contact-body ul {
+    background-color: lightblue;
+    color: blue;
+}
+
+#contact-body ul:hover {
+    background-color: pink;
+    color: blue;
+}
+
+/*   END CONTACT PAGE  */
