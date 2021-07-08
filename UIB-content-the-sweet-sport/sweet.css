@@ -13,6 +13,9 @@ h1 {
     background-color: #dad8d8;
     color: purple;
 }
+#mainpage h2::first-letter {
+    font-size: 100px;
+}
 
 #main-topic {
     background-color: #FF69B4;
@@ -25,6 +28,13 @@ h1 {
 }
 .subtopic:hover {
     color: lightblue;
+}
+.subtopic::first-line {
+    font-size: 50px;
+}
+.subtopic+p::first-letter {
+    color: red;
+    font-size: 100px;
 }
 
 .partner {
@@ -56,7 +66,19 @@ h1 {
 
 #contact-body ul:hover {
     background-color: pink;
-    color: blue;
+    color: rgb(30, 255, 0);
 }
+
+#contact-body a {
+    color: cadetblue;
+}
+
+#contact-body a:visited {
+    color: rgb(165, 77, 26);
+}
+#contact-body a:hover {
+    color: rgb(51, 133, 13);
+}
+
 
 /*   END CONTACT PAGE  */
