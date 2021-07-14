@@ -7,11 +7,37 @@
     <title>Shadows</title>
     <style>
         h1 {
-            text-shadow: 12px 12px brown;
+            text-shadow: 2px 2px 2px brown;
+        }
+        .box {
+            padding: 10px;
+            box-shadow: 2px 2px 2px 2px;
+        }
+        h1::before {
+            display: inl;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 1px solid red;
+            box-shadow: 1px 1px 1px gray;
+        }
+
+        h1::after {
+            display: inl;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 1px solid green;
+            box-shadow: 1px 1px 1px gray;
         }
     </style>
 </head>
 <body>
     <h1>Learning Shadows</h1>
+    <div class="box">
+        <p class="firstpara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet impedit sit quas, ratione, culpa quo, maiores animi dicta cupiditate nemo fuga natus aspernatur perferendis quisquam est? Ullam, ex nihil.
+        </p>
+    </div>
 </body>
 </html>
