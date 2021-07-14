@@ -1,30 +1,88 @@
-
-.container {
-    display: flex;
-    position: relative;
-   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.kutu1{
+.container {
+    display:flex ;
+}
 
+.kutu {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.kutu1 {
     background-color: aqua;
-    width: 50%;
+    width: 30%;
     height: 100px;
-    display: inline-block;
-    text-align: center;
+}
 
-    
-   
-}.kutu2 {
+.kutu2 {
     background-color: red;
-    width: 50%;
-    height: 100px;
-    display: inline-block;
+    width: 70%;
     
-   
 }
 
 .kutu1 p {
     color: rgb(255, 0, 55);
-    position: absolute;
+    background-color: yellow;
+    width: 100px;
+    height: 40px;
 }
 
+.kutu2 p {
+    color: blue;
+    background-color: yellowgreen;  
+    width: 100px;
+    height: 40px;
+}
+.garten {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    
+}
+
+.width-try {
+    background-color: yellowgreen;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    font-size: 50px;
+   
+  
+   
+    
+}
+
+.yanyana-try {
+   display: flex;
+   margin: 10px;
+   text-align: center;
+   background-color: chocolate;
+   border: 5px solid black;
+   font-size: 10px;
+}
+
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}

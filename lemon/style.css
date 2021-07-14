@@ -1,0 +1,48 @@
+.ingredient {
+    background-color: #e4f7e4;
+    border: 2px solid #d5d5d5;
+}
+
+.cake-img {
+    width: 400px;
+    height: auto;
+}
+.cake-list {
+    background-color: lightblue;
+    list-style-type: square;
+}
+
+.drizzle-list {
+    background-color: lightgreen;
+    list-style-type: circle;
+}
+
+
+.feather-list {
+    background-color: orange;
+    list-style-type: disc;
+}
+
+.method-list {
+    list-style-type: lower-roman;
+}
+
+.magazine {
+    color: blue;
+}
+.magazine:visited {
+    color: orange;
+}
+
+.magazine:hover {
+    color: green;
+}
+
+.author {
+    color: dodgerblue;
+
+}
+
+.author:hover {
+    color: orange;
+}

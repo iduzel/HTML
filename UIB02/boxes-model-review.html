@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display property values review</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        border: 1px solid blue;
+      }
+      h1, h3 {
+          margin: 10px;
+      }
+      .inline {
+          display: inline;
+          width: 20px;
+          height: 20px;
+          margin: 10px;
+      }
+
+      .inlineblock {
+            display: inline-block;
+            width: 50px;
+            height: 20px;
+            overflow: auto; /* hidden or  */
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Display property values Demo</h1>
+    <section>
+      <h3>Display Block</h3>
+      <div class="block">Block!</div>
+      <div class="block">Block!</div>
+      <div class="block">Block!</div>
+      <div class="block">Block!</div>
+      <ul>
+          <li>Takes the whole sace of the container</li>
+          <li>Appears on a new line underneath the preceding element</li>
+          <li><code>p, div, main, h1, footer</code></li>
+      </ul>
+    </section>
+
+    <section>
+        <h3>Display : inline</h3>
+
+        <div class="inline">Inline!</div>
+        <div class="inline">Inline!</div>
+        <div class="inline">Inline!</div>
+        <div class="inline">Inline!</div>
+        <ul>
+            <li>Inline take only the space the content needs</li>
+            <li>Cannot set width and height</li>
+            <li>Cannot set margin-top and margin-bottom</li>
+            <li>They dont start on a new line</li>
+            <li>They can be styled inline props like text-align etc</li>
+            <li><code>span, code, a, img, cite</code></li>
+            <li><cite>Le Louvre</cite></li>
+        </ul>
+    </section>
+    <section>
+        <h3>Display: Inline-block</h3>
+        <div class="inlineblock">Inline Block!</div>
+        <div class="inlineblock">Inline Block!</div>
+        <div class="inlineblock">Inline Block!</div>
+        <div class="inlineblock">Inline Block!</div>
+        <ul>
+            <li>Can set width and height</li>
+            <li>can set margin</li>
+        </ul>
+    </section>
+  </body>
+</html>
