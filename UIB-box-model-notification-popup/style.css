@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.notification {
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    text-align: center;
+    line-height: 50px;
+    bottom: 20px;
+    right: 20px;
+
+
+
+}
+
+.close {
+    position: relative;
+    border: none;
+    left: 150px;
+    bottom: 40px;
+    background: none;
+    
+
+
+}
+
+img {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+
+}
