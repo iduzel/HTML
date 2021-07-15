@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      div {
+        width: 600px;
+        height: 300px;
+        margin: 40px;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        line-height: 300px;
+        display: inline-block;
+      }
+      .backimg {
+        background: url("images/alain-a47wTLL0xNA-unsplash.jpg");
+        background-size: cover;
+      }
+      .linear {
+        background: linear-gradient(black white);
+      }
+      .radial {
+        background: radial-gradient(red blue);
+      }
+      .blacksun {
+        background: radial-gradient(circle at 100%, #333 50%, #eee 75%, #333);
+      }
+
+      .whitelamp {
+        /* x size , y size , loc x, loc y, colors*/
+        background: radial-gradient(350px 40px at 50px bottom, #666, #222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backimg">Background with image</div>
+    <div class="linear">Linear Gradient</div>
+    <div class="radial">Radial Gradient</div>
+    <div class="blacksun">Black Sun</div>
+    <div class="whielamp">White Lamp</div>
+  </body>
+</html>

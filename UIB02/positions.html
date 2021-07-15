@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      font-size: 40px;
+      color: white;
+      line-height: 200px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      text-align: center;
+    }
+
+    .static {
+      background-color: tomato;
+      position: static;
+    }
+    .relative {
+      position: relative;
+      /* top left right bottom*/
+      background-color: black;
+      top: 100px;
+      left: 100px;
+      z-index: 1;
+    }
+
+    .relative2 {
+      background-color: aqua;
+      height: 300px;
+      width: 300px;
+      position: relative;
+      top: 50px;
+      left: 100px;
+      z-index: 1;
+    }
+
+    .relative2 div {
+      background-color: blueviolet;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+    }
+
+    .absolute1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .absolute2 {
+      position: absolute;
+      top: 100;
+      left: 100;
+    }
+    .absolute3 {
+      position: absolute;
+      top: 200;
+      left: 200;
+    }
+    .absolute {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: crimson;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: darkolivegreen;
+    }
+
+    .sticky {
+      position: sticky;
+      background-color: darkorange;
+      z-index: 100;
+      top: 400px;
+      left: 400px;
+    }
+  </style>
+
+  <body>
+    <div class="static">Static</div>
+    <div class="relative">Relative</div>
+    <div class="relative2">
+      Relative Parent
+      <div class="absolute1">1</div>
+      <div class="absolute2">2</div>
+      <div class="absolute3">3</div>
+    </div>
+
+    <div class="absolute">Abs Outside the parent</div>
+    <div class="fixed">Fixed</div>
+    <div class="sticky">Sticky</div>
+  </body>
+</html>
