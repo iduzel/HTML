@@ -94,3 +94,19 @@ p {
     width: 100px;
     height: 100px;
 }
+
+
+.tooltip {
+    position: relative;
+    margin: 200px;
+}
+.tooltiptext {
+    background-color: black;
+    color: blanchedalmond;
+    position: absolute;
+   visibility: hidden;
+   border-radius: 6px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
