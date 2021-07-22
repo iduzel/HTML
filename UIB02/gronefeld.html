@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gronefed Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+​
+        body {
+            background-image: url("images/homepage_cleaned.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+​
+        .container {
+            width: 60%;
+            transform: translate(0, 50%);
+            margin-top: 75px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .toprow {
+            /* background-color: black; */
+            height: 150px;
+        }
+​
+        .toprow > div, .bottomrow > div {
+            width: 33%;
+            float: left;
+            position: relative;
+        }
+​
+        .blue {
+            background: url("images/blue.png") no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 150px;
+            line-height: 200px;
+            text-align: center;
+        }
+​
+        .red {
+            text-align: right;
+            /* background-color: cyan; */
+            /* bottom: -100px; */
+            top:100px;
+            right: -10px
+        }
+​
+        .brown {
+            /* background-color: brown; */
+            text-align: center;
+            bottom: -100px;
+        }
+​
+        .green {
+            /* background-color: cornflowerblue; */
+            bottom: -80px;
+            left: -20px
+        }
+​
+        .grey {
+            bottom: -100px;
+        }
+​
+        .orange {
+            right: -125px;
+            bottom: -50px;
+        }
+​
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="toprow">
+            <div class="red"><img src="images/red2.png" alt=""></div>
+            <div class="brown"><img src="images/brown3.png" alt=""></div>
+            <div class="green"><img src="images/green2.png" alt=""></div>
+        </div>
+        <div class="bottomrow">
+            <div class="orange"><img src="images/orange5.png" alt=""></div>
+            <div class="blue"><img src="images/blue-letters.png" alt=""></div>
+            <div class="grey"><img src="images/grey3.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

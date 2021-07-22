@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    margin: 5rem;
+    
+}
+.tmb {
+    display: flex;
+    
+
+}
+.left {
+
+}
+
+img {
+    width: 550px;
+    height: 300px;
+}

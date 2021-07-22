@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Review</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            background-color: blueviolet;
+            color: white;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 11px 35px 2px;
+            z-index: 10;
+        }
+
+        .navitem {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .navitem:hover {
+            cursor:pointer;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        .leftcol {
+            position: fixed;
+            width: 200px;
+            background-color: chartreuse;
+            top: 40px;
+            z-index: 0;
+            padding: 20px;
+        }
+
+        .postcontainer {
+            margin-left: 200px;
+            margin-top: 60px;
+            padding: 30px;
+        }
+
+        .post {
+            border: 1px solid lightgrey;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            color: #333;
+        }
+
+        .mcontainer {
+            position: fixed;
+            bottom: 0;
+            right: 30px;
+            width: 300px;
+            height: 400px;
+            background-color: darkgray;
+            border-radius: 10px 10px 0 0;
+            padding: 20px;
+            color: white;
+        }
+
+        .mheader {
+            font-weight: bold;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .messages-container {
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
+            height: 270px;
+            overflow-y: auto;
+        }
+
+        .message1 {
+            text-align: left;
+        }
+
+        .message2 {
+            text-align: right;
+            color: aqua;
+        }
+
+        .message1, .message2 {
+            margin-top: 10px;
+            background-color: #222;
+            padding: 10px;
+            font-size: smaller;
+            border-radius: 5px;
+        }
+
+        .tcontainer {
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
+            height: 40px;
+            width: 100%;
+            color: #888;
+            font-size: smaller;
+        }
+
+        .sticky {
+            position: sticky;
+            top:40px;
+            width: 100%;
+            height: 40px;
+            background-color: palevioletred;
+            opacity: 0.5;
+            line-height: 20px;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li class="navitem">Home</li>
+                <li class="navitem">Friends</li>
+                <li class="navitem">Pages</li>
+                <li class="navitem">Videos</li>
+            </ul>
+        </nav>
+
+        <div class="leftcol">
+            <ul>
+                <li class="leftitems">List item 1</li>
+                <li class="leftitems">List item 2</li>
+                <li class="leftitems">List item 3</li>
+                <li class="leftitems">List item 4</li>
+                <li class="leftitems">List item 5</li>
+                <li class="leftitems">List item 6</li>
+                <li class="leftitems">List item 7</li>
+                <li class="leftitems">List item 8</li>
+                <li class="leftitems">List item 9</li>
+                <li class="leftitems">List item 10</li>
+                <li class="leftitems">List item 11</li>
+                <li class="leftitems">List item 12</li>
+                <li class="leftitems">List item 13</li>
+                <li class="leftitems">List item 14</li>
+                <li class="leftitems">List item 15</li>
+            </ul>
+        </div>
+
+        <div class="postcontainer">
+            <div class="sticky">Covid news in your area</div>
+            <div class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam mollitia labore, deleniti enim modi sapiente, eos aspernatur et quisquam quod impedit perspiciatis alias, quae autem repellendus minima dolorum iste tempora.</div>
+            <div class="post">Repellat nobis assumenda officia, rem consequuntur magni eius ipsa vel voluptates eveniet odit, mollitia velit dolore dolorem libero provident! Quidem quisquam ipsum, iusto ad aut delectus iure quaerat doloribus? Officiis?</div>
+            <div class="post">Quas sapiente officiis quis, aspernatur ipsam necessitatibus quaerat labore fuga saepe sequi aut ea mollitia eveniet eum nisi eos! Eaque ratione deleniti veniam sint unde ipsum veritatis. Reiciendis, amet cum.</div>
+            <div class="post">Autem asperiores quis quam doloremque. Minima culpa veniam debitis fugiat autem natus libero, voluptatum necessitatibus, odio provident, saepe deserunt tempore? Placeat, reiciendis? Eaque vitae quos repudiandae fugit doloribus suscipit eius!</div>
+            <div class="post">Ipsam asperiores doloremque nulla! Dolorem rem eligendi voluptatem nisi maxime et suscipit laborum laboriosam inventore, corporis totam ex cum cupiditate distinctio recusandae perspiciatis officia, ullam reprehenderit ad doloribus molestias. Quas?</div>
+            <div class="post">Blanditiis ullam rem facilis itaque. Dolorum hic porro omnis fugiat nihil quisquam officia incidunt, vitae repellat culpa aspernatur adipisci. Fugit, ullam. Cupiditate consequuntur id obcaecati suscipit temporibus nobis nemo facilis.</div>
+            <div class="post">Delectus quasi enim unde? Reiciendis, laboriosam! Vitae soluta laboriosam corporis magnam modi omnis! Sunt dolores nam maxime sit. Molestiae inventore ratione debitis ullam natus pariatur iure vel consequatur, blanditiis dolore?</div>
+            <div class="post">Nisi, assumenda quae fuga commodi, modi expedita voluptate quam quod, necessitatibus cum itaque earum. Unde nisi excepturi doloremque voluptas soluta aliquid beatae facilis commodi, quod optio nesciunt officiis dolore tempore!</div>
+            <div class="post">Cupiditate ab eius tempore quidem consequuntur neque eligendi delectus et veniam provident animi aspernatur explicabo, atque tempora debitis molestiae excepturi quis? Voluptatem impedit unde dicta eius veniam animi aperiam sint.</div>
+            <div class="post">Necessitatibus, quae non! Corporis architecto sed, doloribus optio repellat possimus voluptate. Fugit qui itaque atque culpa! Ex, at. Quibusdam, molestiae doloribus. Vel voluptates voluptate placeat amet dicta. Dolorum, est voluptate?</div>
+            <div class="post">Officiis, nemo! Eum odit architecto quidem, iure ut debitis id amet ducimus sit ipsam. Sunt expedita optio fugit architecto, rem corporis consequatur doloribus tenetur, velit obcaecati libero eaque nam. Sed?</div>
+            <div class="post">Vitae laborum voluptates, deserunt veritatis tempore dolor sint rem at, recusandae dolorum accusamus excepturi ab quam saepe in aut nostrum sapiente nesciunt inventore. Natus quae eos labore voluptatibus ipsum quisquam!</div>
+            <div class="post">Doloribus nam explicabo sapiente excepturi odio aliquid eveniet sed alias odit laboriosam eligendi dolor ab dicta neque ea optio eius eos corrupti aspernatur voluptatem, nobis natus nihil molestiae! Eaque, quisquam?</div>
+            <div class="post">Velit ab, saepe voluptas ad odio sequi repudiandae expedita dolores atque laudantium, neque, eligendi magni aspernatur nulla quibusdam. Maiores voluptates earum non ipsum modi doloremque blanditiis! Ratione ullam aut eum.</div>
+            <div class="post">Excepturi, dolore dignissimos sed a sit voluptatibus iste ducimus dolorum vel reprehenderit ab iure alias, ut quis libero quia temporibus. Quis voluptatem eum id amet voluptates molestias vel obcaecati asperiores.</div>
+            <div class="post">Eligendi, esse? Cumque quibusdam quae excepturi, tempora perspiciatis, quod temporibus, soluta delectus veniam nesciunt blanditiis commodi nemo recusandae praesentium atque. Vitae facere non provident, sint libero corrupti assumenda est similique!</div>
+            <div class="post">Cumque nobis nostrum neque commodi fugiat. Repudiandae totam odio aut eveniet laudantium expedita! Voluptates consequatur nulla cum sequi quasi possimus eveniet iusto ex vero quia. Enim ullam reprehenderit corrupti esse?</div>
+            <div class="post">Qui quia cumque consequuntur error vero iusto fugit a voluptatem! Sequi optio nihil fuga, voluptas eos voluptates voluptatem quis ducimus accusantium aut distinctio. Quo itaque ipsum, temporibus hic eveniet sequi?</div>
+            <div class="post">Aliquid aspernatur, eligendi molestias, debitis magni quam quo accusantium nihil tempore explicabo tempora totam minus itaque saepe, ducimus recusandae fuga culpa quisquam sunt atque architecto porro ab? Quo, quibusdam et.</div>
+            <div class="post">Quas earum veniam reiciendis laborum incidunt iure, deserunt corrupti sunt voluptas quos aperiam magni itaque expedita, maxime vero et quam harum quasi ex. Fuga, laboriosam ducimus veniam sapiente corrupti quae?</div>
+        </div>
+
+        <div class="mcontainer">
+            <div class="mheader">Message History with Joe</div>
+            <div class="messages-container">
+                <div class="message1">Hello John</div>
+                <div class="message2">Hi</div>
+                <div class="message1">Meet you at 5</div>
+                <div class="message2">Cool</div>
+                <div class="message1">Thanks</div>
+                <div class="message1">Hello John</div>
+                <div class="message2">Hi</div>
+                <div class="message1">Meet you at 5</div>
+                <div class="message2">Cool</div>
+                <div class="message1">Thanks</div>
+            </div>
+            <div class="tcontainer">
+                Type your text here >
+            </div>
+        </div>
+
+
+    </main>
+    
+</body>
+</html>

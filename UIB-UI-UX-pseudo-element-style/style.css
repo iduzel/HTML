@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+}
+
+ul {
+    margin: 20px;
+}
+
+li {
+    margin: 8px;
+    
+}
+.first-task li::before,.first-task li::after {
+    content: "";
+    padding: .3rem;
+    background-image: url("images/quotes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.second-task li {
+    margin: 3rem;
+    
+}
+.second-task li a {
+    text-decoration: none;
+}
+
+.second-task .pdf::after {
+    content: "";
+    padding: 1.2rem;
+    background-image: url(images/pdf.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+
+}
+
+.second-task .xls::after {
+    content: "";
+    padding: 1rem;
+    background-image: url(images/ms-excel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.second-task .doc::after {
+    content: "";
+    padding: 1.2rem;
+    background-image: url(images/ms-word.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.first-box {
+    background-color: aqua;
+    width: 100%;
+    height: 3rem;
+  
+    
+
+}

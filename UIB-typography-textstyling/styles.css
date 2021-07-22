@@ -1,0 +1,60 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: limegreen;
+    padding: 40px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px;
+    font-size: 3rem;
+}
+
+h3 {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0px;
+    word-spacing: 3rem;
+}
+
+h1, h3 {
+    font-family: 'Oswald', sans-serif;
+   
+}
+
+h1+p {
+    text-align: justify;
+}
+
+blockquote {
+  
+    margin: 0 0 0 30px;
+    font-style: italic;
+    line-height: 2rem;
+    text-align: right;
+
+}
+    
+span {
+    text-decoration: line-through;
+}
+
+em {
+    text-transform: capitalize;
+}
+
+strong {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+a {
+    color: lightseagreen;
+    text-decoration: none;
+}

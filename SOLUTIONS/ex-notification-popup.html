@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification Popup</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .notification {
+            background: tomato;
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            padding: 1.5rem;
+          }
+          
+          .notification .close {
+            background: none;
+            border: 0;
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            right: -16px;
+            top: -16px;
+          }
+          
+          .close img {
+            height: 100%;
+            width: 100%;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="notification">
+      <button class="close"><img src="icon-close.png" alt="" /></button>
+      This is a notification!
+    </div>
+  </body>
+</html>

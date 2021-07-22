@@ -1,0 +1,15 @@
+h1, h2,h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family:'Montserrat', sans-serif; 
+}
+
+li {
+    font-family: 'Uchen', serif;
+}
+
+.code code{
+    font-family:'Montserrat', sans-serif monospace; 
+}

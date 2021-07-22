@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/UX styling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700;1,800&family=Qahiri&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        font-size: 62.5%;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        background-color: blue;
+        font-family: "Open Sans", sans-serif;
+      }
+      p {
+        font-size: 3rem;
+        padding: 2rem;
+      }
+
+      p::before, p::after {
+          content: 'Yu!';
+          background-color: yellow;
+          padding: 2rem;
+          background-image: url("images/homepage_cleaned3.jpg");
+          background-size: contain;
+
+      }
+
+      
+      .rtl {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+        font-weight: 900;
+        font-style: italic;
+      }
+      .secondpara {
+        text-align: justify;
+        text-transform: uppercase;
+      }
+
+      h3 {
+          font-family: 'qahiri';
+          font-size: 5rem;
+          padding: 2rem;
+         
+      }
+    </style>
+  </head>
+  <body>
+    <p class="firstpara">
+      <span></span><span></span><span></span><span></span><span></span>Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt
+      inventore vitae. Voluptate fugiat corrupti aperiam iusto alias, magni
+      magnam rem ullam eius hic aspernatur deleniti eum aut est maxime.
+    </p>
+
+    <p class="secondpara">
+      <span></span><span></span><span></span>Lorem ipsum, dolor sit amet
+      consectetur adipisicing elit. Deleniti minus ut suscipit consequuntur et
+      rerum nemo distinctio vero quasi voluptate amet veritatis doloremque iusto
+      maxime quas culpa molestiae, modi quos.
+    </p>
+
+    <p class="rtl">مرحبا كيف حالك هذا الصباح</p>
+    <p class="rtl">Good Morning</p>
+    <h3>This is qahiri font</h3>
+  </body>
+</html>

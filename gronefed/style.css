@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-image: url("images/homepage_cleaned3.jpg");
+    background-repeat: no-repeat;
+    
+}
+.container {
+  
+  display: flex;
+  position: relative;
+  top: 30%;
+  left: 40%;
+  width: 600px;
+  height: 300px;
+ /*  border: 2px solid red; */
+  border-radius: 10px;
+  transition:  0.4s;
+  
+ 
+  
+  
+ 
+  
+  
+
+}
+
+.blue {
+  
+  position: absolute;
+  bottom: 20px;
+}
+.vector {
+  position: absolute;
+ bottom: 65px;
+ left: 50px;
+}
+.orange {
+  position: absolute;
+  bottom: 40px;
+  left: -120px;
+}
+
+.red {
+  position: absolute;
+  bottom: 180px;
+  left: -40px;
+
+}
+
+.brown {
+  position: absolute;
+  top: 60px;
+  left: 110px;
+}
+
+.green {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+
+.grey {
+position: absolute;
+bottom: 0px;
+right: 220px;
+}
+
+
+.facebook{
+  
+  width:50px;
+  height:50px;
+  background:url("images/icons8-facebook-50.png");
+  margin: 20px;
+  
+  
+}

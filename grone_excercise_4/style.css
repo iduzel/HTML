@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 35rem;
+    background-image: url("images/sykkel-kul-tur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main {
+    margin: 2rem 14rem;
+}
+
+/* TOP*/
+
+.top {
+    width: 100%;
+    height: 30rem;
+}
+
+.top-left {
+    width: 49%;
+    float: left;
+}
+
+.top-left img {
+    width: 100%;
+}
+
+.top-right {
+
+    width: 49%;
+    height: 32rem;
+    float: right;
+    position: relative;
+}
+
+.top-right h2 {
+    color: rgba(255, 0, 0, 0.644);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 2em;
+}
+
+.top-right p {
+    color: #828282;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.link-fa {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.right-link-arrow {
+    width: 20rem;
+    float: left;
+    margin-right: 2rem;
+
+}
+
+.right-link-arrow a {
+    text-decoration: none;
+
+
+}
+
+.face-icon a {
+    background-color: #3b5898d7;
+    color: #fff;
+    float: left;
+    font-size: 1.5em;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 5px;
+
+}
+
+.right-link-arrow p {
+    background-color: rgba(165, 42, 42, 0.808);
+    color: white;
+    text-align: left;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/*END TOP*/
+
+
+/*MIDDLE*/
+
+.middle {
+    width: 100%;
+    height: 8rem;
+    margin: 1rem 0;
+    line-height: 8rem;
+}
+
+.middle h3 {
+
+    font-family: 'Work Sans', sans-serif;
+    width: 40%;
+    font-size: 2rem;
+    float: left;
+}
+
+hr.solid {
+    width: 60%;
+    margin-top: 4rem;
+    border-top: 1px solid #bbb;
+    float: right;
+}
+
+/*END MIDDLE*/
+
+
+/* BOTTOM */
+.bottom {
+    width: 100%;
+    height: 32rem;
+
+}
+
+/*  BOTTOM LEFT*/
+
+.bottom-left {
+    background-image: url("images/man_with_bicycle.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 49%;
+    height: 35rem;
+    float: left;
+    position: relative;
+
+}
+
+
+
+.date-info {
+    color: white;
+    position: absolute;
+    bottom: 6em;
+    left: 1.3em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.date-info p {
+    margin-bottom: .4em;
+}
+
+.bottom-left-date::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f017";
+    margin-right: 8px;
+}
+
+.link-book {
+    background-color: tomato;
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.3em;
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    font-weight: bolder;
+    padding-left: 1em;
+    border-radius: 2px;
+}
+
+.link-book a {
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-book-play-icon {
+    margin-left: 2em;
+}
+
+/*  END BOTTOM LEFT*/
+
+/*  BOTTOM RIGHT*/
+
+.bottom-right {
+    background-image: url("images/svin-houland-1_third_image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 49%;
+    height: 35rem;
+    float: right;
+    position: relative;
+}
+
+.right-date-info {
+    color: white;
+    position: absolute;
+    bottom: 6em;
+    left: 1.3em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.right-date-info p {
+    margin-bottom: .4em;
+}
+
+.bottom-right-date::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f017";
+    margin-right: 8px;
+}
+
+.right-link-book {
+    background-color: tomato;
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.3em;
+    width: 10em;
+    height: 2.5em;
+    color: white;
+    line-height: 2.5em;
+    font-weight: bolder;
+    padding-left: 1em;
+    border-radius: 2px;
+}
+
+.right-link-book a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* END BOTTOM RIGHT*/
+
+
+/* BOTTOM */

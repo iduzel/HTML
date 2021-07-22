@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Review</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        background-color: blueviolet;
+        color: white;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.56);
+      }
+      .nav-item {
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      .nav-item:hover {
+        cursor: pointer;
+        text-shadow: 1px 1px 5px black;
+      }
+      .leftcol {
+        position: fixed;
+        width: 200px;
+        background-color: chartreuse;
+        top: 40px;
+        z-index: 0;
+        padding: 20px;
+      }
+
+      .postcontainer {
+        margin-left: 200px;
+        margin-top: 60px;
+        padding: 30px;
+      }
+
+      .post {
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 20px;
+        color: #333;
+      }
+
+      .mcontainer {
+        position: fixed;
+        bottom: 0;
+        right: 30px;
+        width: 300px;
+        height: 400px;
+        background-color: darkgray;
+        border-radius: 10px 10px 0 0;
+        padding: 20px;
+        color: white;
+      }
+
+      .mheader {
+        font-weight: bold;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .messages-container {
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        height: 270px;
+        overflow: auto;
+      }
+      .message1 {
+        text-align: left;
+      }
+      .message2 {
+        text-align: right;
+        color: aqua;
+      }
+      .message1,
+      .message2 {
+        margin-top: 10px;
+        background-color: #222;
+        padding: 10px;
+        font-size: smaller;
+        border-radius: 5px;
+      }
+      .tcontainer {
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        height: 40px;
+        width: 100%;
+        color: #888;
+        font-size: smaller;
+      }
+      .sticky {
+          position: sticky;
+          top: 40px;
+          width: 100%;
+          height: 40px;
+          background-color: palevioletred;
+          line-height: 20px;
+          border-radius: 10px;
+          color: white;
+          padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Friends</li>
+          <li class="nav-item">Pages</li>
+          <li class="nav-item">Videos</li>
+        </ul>
+      </nav>
+
+      <div class="leftcol">
+        <ul>
+          <!-- ul>li.left-items{List item $}*15 -->
+          <li class="left-items">List item 1</li>
+          <li class="left-items">List item 2</li>
+          <li class="left-items">List item 3</li>
+          <li class="left-items">List item 4</li>
+          <li class="left-items">List item 5</li>
+          <li class="left-items">List item 6</li>
+          <li class="left-items">List item 7</li>
+          <li class="left-items">List item 8</li>
+          <li class="left-items">List item 9</li>
+          <li class="left-items">List item 10</li>
+          <li class="left-items">List item 11</li>
+          <li class="left-items">List item 12</li>
+          <li class="left-items">List item 13</li>
+          <li class="left-items">List item 14</li>
+          <li class="left-items">List item 15</li>
+        </ul>
+      </div>
+
+      <div class="postcontainer">
+          <div class="sticky">
+              Covid news in your area
+          </div>
+        <div class="post">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          doloribus corrupti, vitae ex aliquid ad doloremque laborum labore aut
+          cum repudiandae incidunt nesciunt dicta architecto consectetur
+          consequatur provident similique nisi!
+        </div>
+        <div class="post">
+          Maiores obcaecati ea accusantium consectetur illum delectus alias
+          odit, quasi tenetur reprehenderit dicta suscipit deserunt ipsam
+          similique laboriosam consequatur ipsa tempora ratione autem facilis
+          unde a aliquid? Voluptates, impedit non.
+        </div>
+        <div class="post">
+          Accusamus sunt alias dolor? Sint unde dolore veritatis, beatae
+          corporis libero exercitationem maiores, fugiat quo sit id porro esse
+          quasi repudiandae incidunt eveniet voluptatum soluta necessitatibus
+          deleniti vero nihil! Repellendus.
+        </div>
+        <div class="post">
+          Praesentium rem dolor optio laudantium unde accusantium dolorum
+          molestiae eligendi totam sunt iusto corporis enim architecto, nemo
+          nobis neque blanditiis voluptatibus velit, laboriosam asperiores
+          aperiam autem? Ducimus cumque neque nisi.
+        </div>
+        <div class="post">
+          Molestias reprehenderit quod similique minima officia explicabo itaque
+          non obcaecati nulla error at nam ea aperiam repudiandae ut magnam
+          porro excepturi mollitia veritatis eligendi, hic tempora est numquam?
+          Ex, dolore.
+        </div>
+        <div class="post">
+          Quo velit sapiente ducimus voluptatem nisi, similique dolore odit,
+          ipsum quasi laboriosam harum et aspernatur aperiam inventore? Vel
+          animi non, voluptatum officia modi at nulla ipsum eos! Ipsam, nisi
+          reiciendis?
+        </div>
+        <div class="post">
+          Dolorum quidem sunt harum, deserunt nam fuga similique officia aperiam
+          illum ratione corporis voluptate commodi consectetur nihil,
+          perferendis, praesentium quia quibusdam magnam nesciunt architecto
+          totam eum quae? Consequatur, unde illum?
+        </div>
+        <div class="post">
+          Consequuntur blanditiis, cum dolore laboriosam magni repudiandae non.
+          Iste magni officiis illo, fuga provident aut dolore vitae perspiciatis
+          temporibus expedita atque ex nesciunt eum, eius commodi! Ipsa placeat
+          ullam doloremque.
+        </div>
+        <div class="post">
+          Necessitatibus quod, corrupti magni tenetur recusandae eaque! Mollitia
+          dicta repudiandae nulla, obcaecati aperiam incidunt. Ratione corporis
+          incidunt eligendi libero voluptatum ipsum quisquam. Dolore similique
+          aspernatur quaerat iure quod quia dolorum?
+        </div>
+        <div class="post">
+          Repellendus officia veniam esse voluptates, asperiores, blanditiis
+          vitae architecto quasi laudantium perspiciatis adipisci magni culpa
+          ratione. A, voluptas, repellendus optio accusantium tenetur suscipit
+          eum voluptatibus quisquam excepturi magnam hic deserunt!
+        </div>
+        <div class="post">
+          Maxime, dicta? Fugiat praesentium magnam porro nostrum beatae ipsa
+          voluptatem iure obcaecati. Qui facere possimus corporis officia, sint
+          animi ea alias molestias omnis repellat dolore voluptas odit
+          temporibus doloribus minus?
+        </div>
+        <div class="post">
+          Iste maxime ut harum assumenda quia praesentium deserunt
+          necessitatibus accusantium tenetur voluptatum officia provident quod,
+          distinctio ipsam omnis ad asperiores saepe possimus sequi dignissimos
+          tempore sint. Ducimus eos pariatur adipisci.
+        </div>
+        <div class="post">
+          Esse optio eos laborum deserunt aperiam, minus aliquid asperiores
+          dolore, repellat expedita ipsum! Ipsam accusamus hic reiciendis fuga,
+          id molestiae dolorum quam doloremque modi totam, voluptate quaerat
+          perspiciatis ex. Maiores?
+        </div>
+        <div class="post">
+          Dolorum officia rerum esse iure, beatae cupiditate! Animi, sint
+          reiciendis, praesentium dolorum consequatur quisquam similique saepe
+          quos cum repellendus in, officia voluptatem dolor cumque debitis.
+          Officia magnam aspernatur harum totam.
+        </div>
+        <div class="post">
+          Qui ad at ipsam aliquid incidunt nemo eligendi error minus earum
+          repellat maxime, accusantium quia cum debitis soluta assumenda dolores
+          ex eveniet. Aliquam, vitae id sed adipisci voluptatem iste? Odit.
+        </div>
+        <div class="post">
+          Maxime fugit esse quod ipsum recusandae molestias consequatur
+          accusamus voluptate! Provident quos explicabo porro quasi harum.
+          Atque, sint reiciendis aspernatur amet cum numquam corporis
+          blanditiis, distinctio consequuntur commodi officia dolorem.
+        </div>
+        <div class="post">
+          Accusamus iure temporibus maiores beatae natus fugit nisi
+          necessitatibus, officiis quam odit rem quae veritatis, ex quod
+          laboriosam vel rerum sunt nulla facere enim? Aspernatur possimus
+          deleniti necessitatibus ratione natus.
+        </div>
+        <div class="post">
+          Vitae ex provident harum nihil quasi recusandae enim sed amet
+          repellendus laudantium quibusdam, deserunt maxime voluptate magnam
+          omnis similique delectus minus sunt accusamus explicabo, nam nobis.
+          Doloremque porro velit ea?
+        </div>
+        <div class="post">
+          Laboriosam incidunt animi, rem enim ratione eos. Nisi corporis optio
+          error eveniet, quibusdam sequi neque dolorem similique, consequatur
+          debitis exercitationem dolores quia laudantium temporibus animi?
+          Facilis doloribus sit cumque. Natus!
+        </div>
+        <div class="post">
+          Amet provident quasi culpa assumenda sed repellendus nisi hic rem
+          recusandae distinctio iste soluta tenetur suscipit, optio aperiam
+          similique saepe aliquam, corrupti laborum perspiciatis asperiores
+          dolor ratione. Veritatis, eligendi ipsam.
+        </div>
+      </div>
+
+      <div class="mcontainer">
+        <div class="mheader">Message History with Joe</div>
+        <div class="messages-container">
+          <div class="message1">Hello John</div>
+          <div class="message2">Hi</div>
+          <div class="message1">Meet you at 5</div>
+          <div class="message2">Cool</div>
+          <div class="message1">Thanks</div>
+          <div class="message1">Hello John</div>
+          <div class="message2">Hi</div>
+          <div class="message1">Meet you at 5</div>
+          <div class="message2">Cool</div>
+          <div class="message1">Thanks</div>
+        </div>
+        <div class="tcontainer">
+            Type your text here
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

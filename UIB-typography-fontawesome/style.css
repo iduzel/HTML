@@ -1,0 +1,26 @@
+
+.nav-item, .media-links {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 2rem;
+    padding: 2rem;
+   
+}
+
+.review {
+    text-align: center;
+    text-shadow: 2px 2px gray;
+    text-transform: uppercase;
+}
+
+footer {
+   text-align: center;
+}
+
+.fas {
+    font-size: 3rem;
+}
