@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --primaryfont: 'Open Sans', sans-serif;
+    --h1color: #000F37;
+    --h2color: #000F37;
+    --pcolor: #4F4F4F;
+    --primarycolor: #68E1FD;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/*  HEADER*/
+
+
+.headercontainer {
+    background-color: white;
+    height: 10rem;
+}
+
+.logo_and_text {
+    float: left;
+}
+
+.logo_and_text p {
+    font-family: var(--primaryfont);
+    color: var(--primarycolor);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem;
+}
+
+.logo_and_text p::before {
+    content: "";
+    background-image: url("/assets/png/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 3rem;
+   
+    
+}
+
+.menu {
+
+    margin: 3rem;
+    float: right;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/*  END HEADER*/
+
+
+/*   WHITE*/
+
+.white {
+
+    background-color: white;
+    height: 50rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.white-left {
+
+
+    width: 50%;
+    height: 50rem;
+    float: left;
+    padding: 10em 10em;
+
+
+}
+
+.white-left h1 {
+    margin-bottom: .4em;
+    font-size: 3em;
+}
+
+.white-left p.white-left-text {
+    font-size: 1.3em;
+    margin-bottom: 1.5rem;
+}
+
+.learnMore {
+    background-color: var(--primarycolor);
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.white-left a {
+    text-decoration: none;
+    color: var(--h2color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.white-right {
+
+    width: 50%;
+
+    height: 45rem;
+    float: right;
+}
+
+.white-right img {
+
+    width: 350px;
+    padding-top: 8rem;
+
+
+}
+
+/*   BLUE  */
+
+.blue {
+    background-color: var(--primarycolor);
+    height: 55rem;
+}
+
+.blue-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.blue-text h2 {
+    font-family: var(--primaryfont);
+    font-size: 2.5em;
+}
+
+.blue-text p {
+    font-size: 1.3em;
+}
+
+.blue-box {
+    background-color: white;
+    width: 70%;
+    height: 36rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bluebox-left {
+   
+    width: 50%;    
+    text-align: center;
+    float: left;
+    
+}
+.bluebox-left ul {
+   
+    height: 36rem;
+    padding-top: 10rem;
+    padding-left: 10rem;
+}
+
+.bluebox-left ul li {
+    
+    font-size: 1.8rem;
+    text-align: left;
+    list-style-type: none;
+    font-family: var(--primaryfont);
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.bluebox-left ul li::before {
+    content: "";
+    background-image: url("../assets/png/check-mark.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 5rem;
+    font-size: 1.8rem;
+}
+
+.bluebox-right {
+    float: right;
+    padding-right: 15rem;
+    padding-top: 8rem;
+}
+
+.bluebox-right img {
+    width: 200px;
+}
+
+/*    END BLUE*/
+
+
+/*   FOOTER  */
+
+footer {
+    width: 100%;
+    height: 6rem;
+    background-color:white;
+    
+}
+
+footer p {
+    font-size: 1.4rem;
+    float: left;
+    line-height: 6rem;
+    padding-left: 3em;
+}
+.sm_icons {
+    float: right;
+    line-height: 6rem;
+    padding-right: 3em;
+    font-size: 1.6em;
+
+}
+.sm_icons span {
+    padding-right: 2em;
+}
