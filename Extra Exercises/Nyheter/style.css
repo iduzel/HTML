@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryfontfamily: 'Work Sans', sans-serif;
+    --secondaryfontfamily: 'Roboto', sans-serif;
+    --thirdfontfamily:'Roboto Slab', serif;
+}
+
+.container {
+    width: 80%;
+    height: 1000px;
+    margin: 100px auto;
+    background-image: url("images/green-back-light.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.container h2 {
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    color: white;
+    font-family: var(--primaryfontfamily);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.container h2+p {
+    color: white;
+    font-family: var(--primaryfontfamily);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.cards {
+    margin-bottom: 2rem;
+}
+
+.cards img {
+
+    width: 100%;    
+    height: 20rem;
+    margin-bottom: 1rem; 
+    
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    width: 30rem;
+    height: 40rem;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+
+.lesmer {
+    color: #61ce70;
+    font-size: smaller;
+}
+.fa-angle-double-right {
+    font-size: .5rem;
+}
+.first-card {
+    margin-left: 0.8em;
+}
+
+.second-card, .third-card {
+    margin-left: 1.5em;
+}
+.third-card {
+    margin-right: .8em;
+   
+    
+}
+.card-inside-all {
+
+    padding: 1em;
+    
+}
+.card-inside-all a {
+    text-decoration: none;
+}
+
+.underimageheader {
+    font-family: var(--primaryfontfamily);
+    text-transform: none;
+    line-height: 1.4em;
+}
+
+.date {
+    font-family: var(--secondaryfontfamily);
+    font-size: .8em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.text {
+    font-family: var(--secondaryfontfamily);
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 1.5rem;
+}
+
+.cards-footer {
+    
+
+    background-color: #94ae29;
+    
+    width: 12rem;
+    height: 3rem;
+    margin: 0 auto;
+    line-height: 3rem;
+    font-family: var(--secondaryfontfamily);
+    font-weight: 900;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+
+.cards-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.cards-footer:hover {
+    background-color: coral;
+    color: white;
+}
+
+.cards-footer::after {
+
+}

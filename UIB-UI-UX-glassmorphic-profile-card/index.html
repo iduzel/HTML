@@ -5,11 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/6eada08a2b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
     <style>
+
+        body {
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+        .background {
+
+            width: 900px;
+            height: 500px;            
+            background-image: url("./assets/christopher-gower-unsplash.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 10rem auto;
+
+        }
+        .profile {
+            background-color: rgba(22, 3, 3, 0.1);
+            width: 15rem;
+            height: 25rem;
+            margin: 0 auto;
+            font-family: 'STIX Two Math', serif;
+            box-shadow: 0 0 20px #000;
+            backdrop-filter: blur(12px);
+            border-radius: 10px;
+
+        }
+        .profile img {
+            display: inline-block;
+            border-radius: 50%;
+           margin-left: 3.5rem;
+           border: 2px solid #048af8;
+          
+            
+        }
+        .profile h1 {
+            font-size: 1rem;
+            text-align: center;
+            color: orange;
+            font-weight: 900;
+        }
+
+        .profile p {
+            text-align: left;
+            padding-left: 1em;
+            font-size: .9em;
+            padding-right: 1em;
+
+        }
+        .socialmedia {
+            display: inline-block;
+            width: 100%;
+            height: 2rem;
+            text-align: justify;
+
+        }
+        .socialmedia span {
+            font-size: 1.4em;
+            margin-left: 2.6rem;
+            color: #048af8;
+        }
       
     </style>
 </head>
 <body>
+
+    <div class="background">
+        <div class="profile">
+             <img src="assets/profile-img.jpeg" alt="">
+             <h1>Max Mustermann</h1>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat qui adipisci excepturi quia consequuntur dolor harum nisi quos, nam eum, sint ipsa molestiae ad placeat molestias, nesciunt aperiam. Quidem, ducimus?</p>
+             <div class="socialmedia">
+                 <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+                 <span><a href="#"><i class="fab fa-github"></i></a></span>
+                 <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+             </div>
+        </div>
+       
+    </div>
    
 </body>
 </html>
