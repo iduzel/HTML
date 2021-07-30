@@ -53,7 +53,7 @@
 .card {
     display: inline-block;
     background-color: white;
-    width: 30rem;
+    width: 28rem;
     height: 40rem;
     border-radius: 10px;
     overflow: hidden;
@@ -69,14 +69,18 @@
     font-size: .5rem;
 }
 .first-card {
-    margin-left: 0.8em;
+    margin-left: 1em;
+    float: left;
 }
 
-.second-card, .third-card {
-    margin-left: 1.5em;
+.second-card {
+margin-left:3em;
+
+   
 }
 .third-card {
-    margin-right: .8em;
+    margin-right: 1em;
+    float: right;
    
     
 }
