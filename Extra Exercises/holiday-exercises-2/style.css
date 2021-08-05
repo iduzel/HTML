@@ -155,7 +155,11 @@ li a {
 }
 
 .img img {
-    width: 100%;
+    width: 100%;transition: transform .2s;
+}
+.img img:hover {
+    
+    transform: scale(1.2);
 }
 
 .sale {
