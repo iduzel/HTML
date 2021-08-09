@@ -3,97 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
-    display:flex ;
-}
-
-.kutu {
-    display:flex ;
-    justify-content: center;
-    align-items: center;
- 
-
-}
-
-.kutu1 {
-    background-color: aqua;
-    width: 30%;
-    height: 100px;
-}
-
-.kutu2 {
-    background-color: red;
-    width: 70%;
-    
-}
-
-.kutu1 p {
-    color: rgb(255, 0, 55);
-    background-color: yellow;
-    width: 100px;
-    height: 40px;
-}
-
-.kutu2 p {
-    color: blue;
-    background-color: yellowgreen;  
-    width: 100px;
-    height: 40px;
-}
-.garten {
-    width: 200px;
-    height: 300px;
-    margin: auto;
-    
-}
-
-.width-try {
-    background-color: yellowgreen;
-    display: inline-block;
-    width: 200px;
-    height: 300px;
-    margin: auto;
-    font-size: 50px;
-   
-  
-   
-    
-}
-
-.yanyana-try {
-   display: flex;
-   margin: 10px;
-   text-align: center;
-   background-color: chocolate;
-   border: 5px solid black;
-   font-size: 10px;
-}
-
-aside {
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
-}
-
-aside > p {
-    margin: .5rem;
-}
-
-p {
-    font-family: 'Fira Sans', sans-serif;
-}
-
-
-.merhaba {
-    background-color: blue;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
 
 
 .tooltip {
@@ -106,7 +15,83 @@ p {
     position: absolute;
    visibility: hidden;
    border-radius: 6px;
+  
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
+   position: absolute;
+   
+}
+
+.bahcebox {
+    width: 600px;
+    height: 600px;
+    background-color: rgba(65, 105, 225, 0.384);
+    text-align: center;
+    
+    
+}
+
+.bahce {
+    border: solid 7px white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: crosshair;
+    transition: filter 0.3s linear, transform 0.3s linear;
+    padding: 5px;
+    margin-top: 30px;
+
+}
+
+.bahcebox:hover .bahce {
+    filter: blur(4px);
+    transform: scale(0.9);
+}
+
+
+.bahcebox .bahce:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+}
+
+
+
+.coffee {
+    position: relative;
+}
+
+.handle {
+  background-image: linear-gradient( 180deg, rgb(200,200,200) 5%, rgb(255,255,255) 50%, rgb(200,200,200) 95%);
+  box-shadow: 5px 0px 1px 0px rgba(200, 200, 200, 0.8);
+  position: absolute;
+  top: 50%;
+  right: 320px;
+  transform: translateY(-50%);
+  width: 127px;
+  height: 50px;
+  z-index: 2;
+  border-radius: 50px;
+}
+
+.coffee-cup {
+    border-radius: 50%;
+  background-image: radial-gradient( 50% 50%, rgb(14,7,0) 65%, rgb(185,144,18) 75%, rgb(129,129,129) 75%, rgb(255,255,255) 95%, rgb(161,161,161) 100%);
+  box-shadow: 10px 35px 30px 7px rgba(49, 49, 49, 0.1);
+  position: relative;
+  width: 462px;
+  height: 462px;
+  z-index: 3;
+}
+
+.brew {
+    border-radius: 50%;
+  background-image: linear-gradient( 140deg, rgb(0,0,0) 0%, rgb(52,26,0) 100%);
+  box-shadow: 5px 5px 0px 0px rgba(252, 232, 185, 0.55);
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  transform: translateY(-50%);
+  width: 316px;
+  height: 316px;
+  z-index: 4;
+    
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Stripes</title>
+    <style>
+      table {
+        margin: 100px;
+        border: 1px solid #c0c0c0;
+        box-shadow: 2px 2px 0.5px blueviolet;
+        transition: .3s ease;
+      }
+      table:hover {
+          transform: scale(1.2);
+          transition: .5s ease;
+      }
+      thead {
+        background-color: #888888;
+        color: #fff;
+      }
+      th,
+      td {
+        padding: 10px;
+        font-size: 1rem;
+        text-align: left;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #c0c0c0;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #efefef;
+      }
+
+      tbody tr:nth-child(3) td:nth-child(2),
+      tbody tr:nth-child(6) td:nth-child(2) {
+        background-color: #ffbbbb;
+      }
+
+      tbody tr:nth-child(4) td:last-child {
+          background:linear-gradient(to bottom right, red, yellow, blue);
+      }
+      tbody tr:first-child td:nth-child(2) {
+          background: radial-gradient( yellow 5%, blue 15%,red 60%);
+      }
+
+      tbody tr:nth-child(2) td:first-child {
+          background: linear-gradient(to right top, red 20%,
+                                                    blue 20%,
+                                                    blue 40%, 
+                                                    yellow 40%, 
+                                                    yellow 60%, 
+                                                    aqua 60%);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Scott</td>
+          <td>Gomez</td>
+          <td>Player</td>
+          <td style="background: red;" rowspan="6">Colspan</td>
+        </tr>
+        <tr>
+          <td>Paul</td>
+          <td>Mackie</td>
+          <td>Coach</td>
+        </tr>
+        <tr>
+          <td>Leoni</td>
+          <td>Cabrera</td>
+          <td>Assistant</td>
+        </tr>
+        <tr>
+          <td>Gregor</td>
+          <td>Byrne</td>
+          <td>Player</td>
+        </tr>
+        <tr>
+          <td>Francis</td>
+          <td>Schaffer</td>
+          <td>Manager</td>
+        </tr>
+        <tr>
+          <td>Walter</td>
+          <td>Gale</td>
+          <td>Player</td>
+        </tr>
+        <tr>
+            <td style="background: rgb(241, 238, 33); color: black;" colspan="3">Rowspan</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -24,7 +24,7 @@
 
 .leftList ul li {
     list-style-type: none;
-    padding: 20px 15px;
+    padding: 16px 15px;
     border-radius: 30px;
 
 }
@@ -69,6 +69,11 @@
     background-color: #1da0f2;
     text-align: center;
     margin-top: 1rem;
+    width: 18rem;
+    height: 3rem;
+    text-align: center;
+   
+   
 
 }
 
@@ -77,6 +82,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bolder;
+
 }
 
 .sendTweet:hover a {

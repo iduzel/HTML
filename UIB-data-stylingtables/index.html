@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables Styling</title>
+    <style>
+      table {
+        margin: 40px;
+      }
+      td {
+        letter-spacing: 2px;
+        font-size: 2rem;
+      }
+     /*  td:nth-child(2),
+      td:nth-child(3) {
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+        border-left: 5px solid #c0c0c0;
+      }
+      tr:nth-child(odd) td:nth-child(1) {
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+        border-left: 5px solid #cc181b;
+      }
+      tr:nth-child(even) td:nth-child(1) {
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+        border-left: 5px solid #449d45;
+      } */
+
+     
+
+      section table tr td:nth-child(2)::before,
+      section table tr td:nth-child(3)::before {
+        content: "";
+        border-left: 4px solid #c0c0c0;
+        background-color: yellow;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      section table tr:nth-child(odd) td:nth-child(1)::before {
+        content: "";
+        padding-left: 0.5rem;
+        padding-right: .5rem;
+        border-left: 5px solid #449d45;
+      }
+      section table tr:nth-child(even) td:nth-child(1)::before {
+        content: "";
+        padding-left: 0.5rem;
+        padding-right: .5rem;
+        border-left: 5px solid #cc181b;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Scott</td>
+        <td>Gomez</td>
+        <td>Player</td>
+      </tr>
+      <tr>
+        <td>Paul</td>
+        <td>Mackie</td>
+        <td>Coach</td>
+      </tr>
+      <tr>
+        <td>Leoni</td>
+        <td>Cabrera</td>
+        <td>Assistant</td>
+      </tr>
+      <tr>
+        <td>Gregor</td>
+        <td>Byrne</td>
+        <td>Player</td>
+      </tr>
+      <tr>
+        <td>Francis</td>
+        <td>Schaffer</td>
+        <td>Manager</td>
+      </tr>
+      <tr>
+        <td>Walter</td>
+        <td>Gale</td>
+        <td>Player</td>
+      </tr>
+    </table>
+
+    <section>
+      <table>
+        <tr>
+          <td>Scott</td>
+          <td>Gomez</td>
+          <td>Player</td>
+        </tr>
+        <tr>
+          <td>Paul</td>
+          <td>Mackie</td>
+          <td>Coach</td>
+        </tr>
+        <tr>
+          <td>Leoni</td>
+          <td>Cabrera</td>
+          <td>Assistant</td>
+        </tr>
+        <tr>
+          <td>Gregor</td>
+          <td>Byrne</td>
+          <td>Player</td>
+        </tr>
+        <tr>
+          <td>Francis</td>
+          <td>Schaffer</td>
+          <td>Manager</td>
+        </tr>
+        <tr>
+          <td>Walter</td>
+          <td>Gale</td>
+          <td>Player</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

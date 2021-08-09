@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Tbles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2 {
+            padding: 30px;
+            margin: 30px;
+        }
+        table {
+            margin: 20px;
+            border: 1px dotted black;            
+            border-spacing: 20px;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 600px;
+        }
+
+        caption {
+            font-weight: 600;
+            font-size: 2rem;
+            caption-side: bottom;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+
+        td, th {
+            border: 5px ridge red;
+            padding: 10px;
+            font-size: 2rem;           
+        }
+        tbody tr td:last-child {
+            background-color: aqua;
+        }
+        tbody tr td:nth-child(even) {
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Tables</h2>
+    <table>
+        <caption>DIESEL softwarelist of Employees</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+            <th rowspan="2" scope="row">Marketing</th>
+            <td>John</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="row">Finance</th>
+            <td>Jim</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Doe</td>
+        </tr>
+        </tbody>
+        
+       
+        <tfoot>
+            <tr>
+            <td colspan="2">Total rows: 2</td>
+            
+        </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Table Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            margin: 40px;
+            width: 80%;
+            height: auto;            
+            border-collapse: collapse;
+        }
+
+        thead {
+            text-align: center;
+           
+        }
+        th, td {
+            
+            border: 1px solid lightgray;
+            padding: 5px;
+           
+           
+        }
+        tbody tr td:nth-child(3) {
+            text-align: right;
+        }
+        tfoot tr td:nth-child(3) {
+            text-align: right;
+        }
+
+        tbody tr:nth-child(odd), tfoot tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        table * tr th:nth-child(4), table * tr td:nth-child(4){
+            background-color: lightgreen;
+            border: 2px dotted red;
+        }
+       
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Amount</th>
+          <th>thead</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>            
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>45</td>
+              <td rowspan="6">tbody</td>
+        
+          </tr>
+          <tr>            
+            <td>Centro comercial Moctezuma	</td>
+            <td>Francisco Chang	</td>
+            <td>45</td>
+        </tr>
+        <tr>            
+            <td>Ernst Handel	</td>
+            <td>Roland Mendel	</td>
+            <td>45</td>
+        </tr>
+        <tr>            
+            <td>Island Trading	</td>
+            <td>Helen Bennett	</td>
+            <td>45</td>
+        </tr>
+        <tr>            
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri	</td>
+            <td>45</td>
+        </tr>
+        <tr>            
+            <td>Magazzini Alimentari Riuniti	</td>
+            <td>Giovanni Rovelli		</td>
+            <td>45</td>
+        </tr> 
+    </tbody>
+       <tfoot>
+           <tr>
+               <td>Total</td>
+               <td></td>
+               <td>210</td>
+               <td>tfoot</td>
+           </tr>
+       </tfoot>
+     
+    </table>
+  </body>
+</html>
